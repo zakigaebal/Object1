@@ -181,3 +181,7 @@ class SportsCar(Car):
 스포츠카.speed_down()
 스포츠카.speed_down()
 스포츠카.speed_down()
+
+# 레퍼런스
+# https://datascienceschool.net/01%20python/02.12%20%ED%8C%8C%EC%9D%B4%EC%8D%AC%20%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D.html 
+
