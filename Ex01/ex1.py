@@ -118,28 +118,28 @@ class Car(object):
             self.speed -= 20
             print(self.speed)
 
-자동차1 = Car()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
-자동차1.speed_up()
+# 자동차1 = Car()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
+# 자동차1.speed_up()
 
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
-자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
+# 자동차1.speed_down()
 
 
 # 연습 문제 2.12.5
@@ -152,20 +152,32 @@ class Car(object):
 
 class SportsCar(Car):
     def __init__(self):
-        super(SportsCar).__init__()
+        super(SportsCar,self).__init__()
         self.max_speed = 200
     def speed_up(self):
-        self.speed += 45
+        if(self.speed <= self.max_speed-45):
+            self.speed +=45
+            print(self.speed)
+        else:
+            print(self.speed)
     def speed_down(self):
-        self.speed -= 15
+        if(self.speed >=45):
+            self.speed -= 45
+            print(self.speed)
+        else:
+            print("최저속도0")
 
-class Truck(Car):
-    def __init__(self):
-        super(Truck).__init__()
-        self.max_speed = 100
-    def speed_up(self):
-        self.speed += 15
-    def speed_down(self):
-        self.speed -= 15
 
-# 
+스포츠카 = SportsCar()
+
+스포츠카.speed_up()
+스포츠카.speed_up()
+스포츠카.speed_up()
+스포츠카.speed_up()
+스포츠카.speed_up()
+스포츠카.speed_down()
+스포츠카.speed_down()
+스포츠카.speed_down()
+스포츠카.speed_down()
+스포츠카.speed_down()
+스포츠카.speed_down()
